@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+<title>{% block title %}Mip| Diagnostico{% endblock %}</title> 
+{% block content %}
+<div class="col-md-4 mx-auto">
+<h1>Diagnostico</h1>
+
+</div>
+
+<div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <img src="https://aprendeencasa.mx/wp-content/uploads/2023/06/la-importancia-de-elegir-el-proveedor-de-estudios-socioeconomicos-laborales-adecuado-para-tu-empresa.png" class="card-img-top" alt="..." width="90px" height="300px">
+          <h5 class="card-title">Estudios Socioeconomicos</h5>
+          <p class="card-text">Informacion que nos permite conocer el entorno económico, social, cultural y laboral de una persona, sea natural o jurídica, pública o privada.</p>
+          <a href="{% url 'socioeconomicos' %}" class="btn btn-primary">Entrar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <img src="https://www.inegi.org.mx/temas/fisiografia/images/mapafisio3.jpg" class="card-img-top" alt="..." width="90px" height="300px">
+        <div class="card-body">
+          <h5 class="card-title">Estudios Geomorfologicos</h5>
+          <p class="card-text">Informacion sobre el relieve de la Tierra, que incluye las formas y estructuras de todas las dimensiones, desde continentes y cuencas oceánicas a estrías y alveolos.</p>
+          <a href="{% url 'geomorfo' %}" class="btn btn-primary">Entrar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+<title>{% block title %}Mip| Entendimiento Comun{% endblock %}</title> 
+{% block content %}
+<div class="col-md-4 mx-auto">
+<h1>Entendimiento Comun</h1>
+</div>
+
+<div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <img src="https://comunicacionycambio.com/wp-content/uploads/2016/08/grupos-de-interc3a9s.jpg" class="card-img-top" alt="..." width="90px" height="300px">
+          <h5 class="card-title">Actores Clave</h5>
+          <p class="card-text">Son aquellos individuos cuya participación es indispensable y obligada para el logro del propósito, objetivos y metas del proyecto en cuestión.</p>
+          <a href="{% url 'socioeconomicos' %}" class="btn btn-primary">Entrar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <img src="https://impulso06.com/wp-content/uploads/2023/09/Porque-es-importante-la-formacion-continua-para-los-educadores.png" class="card-img-top" alt="..." width="90px" height="300px">
+        <div class="card-body">
+          <h5 class="card-title">Formacion Continua</h5>
+          <p class="card-text">Es la práctica de adquirir nuevos conocimientos, habilidades y competencias a lo largo de la vida de una persona.</p>
+          <a href="{% url 'geomorfo' %}" class="btn btn-primary">Entrar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+

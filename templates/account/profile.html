@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+<title>{% block title %}Mip|Perfil{% endblock %}</title> 
+{% block content %}
+
+<div class="col-md-4 mx-auto">
+    <h2> Perfil de Usuario </h2>
+    <h3 class="text-secondary">Bienvenido {{ user.username }} </h3>
+    <hr>
+    
+    <p><strong>Nombre:</strong> {{ user.firstname }}</p>
+    <p><strong>Apellido:</strong> {{ user.lastname }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+</div>
+
+{% endblock content %}
